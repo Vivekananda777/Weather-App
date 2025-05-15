@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="Task5.css" />
+</head>
+<body>
+  <div class="weather-container">
+    <h1>Weather Checker</h1>
+
+    <div class="controls">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button id="searchBtn">Search</button>
+      <button id="locBtn">Use My Location</button>
+    </div>
+
+    <div id="weatherDisplay" class="weather-display hidden">
+      <h2 id="location"></h2>
+      <img id="icon" alt="Weather icon" />
+      <p id="description"></p>
+      <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+      <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+      <p><strong>Wind:</strong> <span id="wind"></span> m/s</p>
+    </div>
+
+    <p id="errorMsg" class="error hidden"></p>
+  </div>
+
+  <script src="Task5.js"></script>
+</body>
+</html>
